@@ -31,6 +31,8 @@ func InitDB() *gorm.DB {
 	}
 	db.AutoMigrate(&model.User{}) //自动创建数据表
 
+	DB = db
+
 	return db
 }
 
